@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/icon/icon-foodlens.png" type="image/jpeg" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffb800" />
+    <title>Food Lens</title>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-4d82d5d3.js"></script>
+    <link rel="stylesheet" href="/assets/index-325d4f23.css">
+  </head>
+  <body>
+    <div id="navbar-root"></div>
+    <main id="main-content" class="main-content"></main>
+  </body>
+</html>
